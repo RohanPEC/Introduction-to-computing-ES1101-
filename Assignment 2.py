@@ -80,12 +80,4 @@ print(answer)
 a = int(input("enter the number a: "))
 b = int(input("enter the number b: "))
 
-c = (a^b)
-d = bin(c)
-
-count = 0
-for i in d[2:1]:
-    if i == "1":
-        count += 1
-
-print(count)
+print((str(bin(a^b))).count("1"))
