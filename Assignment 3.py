@@ -83,6 +83,7 @@ weight_of_oxygen = 15.9994
 no_of_hydrogen = int(input("Enter the number of hydrogen atoms in the carbohydrate molecule: "))
 no_of_carbon = int(input("Enter the number of carbon atoms in the carbohydrate molecule: "))
 no_of_oxygen = int(input("Enter the number of oxygen atoms in the carbohydrate molecule: "))
+
 # Calculating the weight of carbohydrate
 weight_of_carbohydrate = no_of_carbon * weight_of_carbon + no_of_oxygen * weight_of_oxygen + no_of_hydrogen * weight_of_hydrogen
 
