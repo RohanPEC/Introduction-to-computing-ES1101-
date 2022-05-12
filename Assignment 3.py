@@ -54,7 +54,6 @@ x1 = float(input("Enter the value of x1: "))
 x2 = float(input("Enter the value of x2: "))
 y1 = float(input("Enter the value of y1: "))
 y2 = float(input("Enter the value of y2: "))
-
 print("Result:", (y2 - y1) / (x2 - x1))
 
 
