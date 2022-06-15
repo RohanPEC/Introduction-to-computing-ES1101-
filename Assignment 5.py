@@ -14,8 +14,9 @@ print("Reverse of the entered string is: ", reverse)
 
 input_upper_limit = int(input("Enter upper limit of range: "))
 input_lower_limit = int(input("Enter lower limit of range: "))
+# Enter a number to check divisibility with
 input_number = int(input("Enter a number: "))
-
+# taking number one by one from the range and checking its divisibility
 for i in range(input_upper_limit, input_lower_limit):
   if i % input_number == 0:
     print(i)
@@ -38,7 +39,7 @@ z = c + a
 
 # If any of the three lengths is greater than the sum of the other two, then you cannot form a triangle.
 if x > c and y > a and z > b:
-  #Use Heron's formula if the sides form a triangle
+  # Use Heron's formula if the sides form a triangle
   s = (a + b + c)/2
   area = (s*(s - a)*(s - b)*(s - c))**(0.5)
   print(area)
@@ -49,18 +50,35 @@ else:
 #Q4
 
 n = 5
-
+# first printing the stars of the upper half figure in increment
 for i in range (n):
   for j in range (i):
     print("*", end = " ")
   print("")
-
+# then print the lower half stars in decrement
 for i in range (n,0,-1):
   for j in range (i):
     print("*", end = " ")
   print("")
 
+  
+#Q5
 
+# Taking user input
+row_num = int(input("Enter the number of rows: "))
+i = 0 # Making a variable to repeat the alphabets
+a = 0 # Will be used for incrementation of chr function to make the next alphabet
+line = 1 #variable denoting the nth line
+for x in range(row_num): 
+    i = 0
+    while i < line:
+        print(chr(65 + a), end = "")# printing the alphabet
+        i = i + 1 # for printing new alphabet
+        a = a + 1 # for new alphabet
+    print("") # for new line
+    line = line + 1  # line increment
+
+    
 #Q6
 
 #Taking upper and lower limit values
@@ -70,6 +88,7 @@ upper_limit = int(input("Insert upper limit limit for range: "))
 print("Prime numbers between", lower_limit, "and", upper_limit, "are:")
 
 for number in range(lower_limit, upper_limit + 1):
+  # all prime numbers are greater than 1
    if number > 1:
        for i in range(2, number):
            if (number % i) == 0:
@@ -79,9 +98,10 @@ for number in range(lower_limit, upper_limit + 1):
 
 
 #Q7
-
+# Checking multiples if 7 and divisibility by 11
 for i in range(0,500):
     if i % 7 == 0 and i % 11 == 0:
+       # Printing the numbers divisible by both 7 and 11
         print(i)
     else:
         continue
